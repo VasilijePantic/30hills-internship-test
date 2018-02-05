@@ -39,7 +39,7 @@ function checkForData(){
             populateDB();
             console.log("Database populated!");
         } else {
-            console.log("Database already full");
+            console.log("Database ready!");
         }
 
     });

@@ -8,23 +8,15 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
 
 
-
-//=========================================
-//              ROUTES
-//=========================================
-
-// ROOT ROUTE - /
-app.get("/", function(req,res){
-    res.render("search");
-})
-
-// RESULTS ROUTE
-app.get("/results", function(req, res){
-    res.render("results")
-})
+// requiring routes
+var indexRoute = require("./routes/index");
 
 
 
+
+
+// using routes
+app.use("/", indexRoute);
 
 //==================== APP LISTENER
 app.listen(port=3000, function(){
