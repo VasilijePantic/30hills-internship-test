@@ -1,17 +1,16 @@
 <h1>Results</h1>
 
-<h3>These are direct friends of the requested user from the database:</h3>
-
+<h3>These are suggested friends of the requested user from the database:</h3>
 
 <% data.forEach(function(friends){%>
         <li>
             <strong>ID:</strong> <%= friends["id"]%>
-            ---<strong>Surname:</strong> <%=friends["surname"]%>
+            --- <strong>Surname:</strong> <%=friends["surname"]%>
             --- <strong>First name:</strong> <%=friends["firstName"]%>  
             --- <strong>Age:</strong> <%= friends["age"]%> 
             --- <strong>Gender:</strong> <%= friends["gender"]%> 
             --- <strong>Friends:</strong> <%= friends["friends"]%> 
         </li>
-    <% });%>
+<% });%>
 <a href="/">Search again</a>
 

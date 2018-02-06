@@ -11,10 +11,6 @@ app.use(express.static(__dirname + '/public'));
 // requiring routes
 var indexRoute = require("./routes/index");
 
-
-
-
-
 // using routes
 app.use("/", indexRoute);
 
