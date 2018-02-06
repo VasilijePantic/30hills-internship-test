@@ -1,8 +1,9 @@
 <h1>Search Page</h1>
 
-<form method="GET">
-    <input type="text" name="user_id" placeholder="search term">
-    <button formaction="/friends">Direct</button>
-    <button formaction="/friends-of-friends">Friends of friends</button>
+<h4>Type in the ID of a user and choose between Direct friends and Friends of friends search</h4>
 
+<form method="GET">
+    <input type="text" name="user_id" placeholder="search user ID">
+    <button formaction="/friends">Direct friends results</button>
+    <button formaction="/friends-of-friends">Friends of friends results</button>
 </form>

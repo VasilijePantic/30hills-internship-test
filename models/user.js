@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 
-// db config and schema
+// db configuration and schema
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost:27017/30hills");
 var userSchema = new mongoose.Schema({
